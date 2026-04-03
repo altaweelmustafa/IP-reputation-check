@@ -34,6 +34,8 @@ Set your API key as an environment variable:
 export ABUSEIPDB_API_KEY="your_api_key_here"
 ```
 
+If you don't have one, get it from [AbuseIPDB](https://www.abuseipdb.com/check/43.243.95.36) after signing up.
+
 ---
 
 ## Usage
@@ -57,27 +59,24 @@ python main.py 8.8.8.8
   * IP details
   * Abuse score
   * Risk classification
+```
+====== IP Reputation Report ======
+IP Address:              172.66.148.78
+Abuse Score:             0
+Risk Level:              LOW
+Country:                 US
+ISP:                     Cloudflare, Inc.
+Domain:                  cloudflare.com
+Total Reports:           0
+Last Reported:           None
+==================================
+
+[+] Report saved to report.md
+```
 
 * File:
 
   * `report.md` → structured investigation report
 
----
-
-## Use Case
-
-This tool simulates basic threat intelligence enrichment used in:
-
-* SOC analysis
-* Log investigation
-* Incident response
-
----
-
-## Notes
-
-* Do NOT hardcode your API key
-* Add `.env` or environment variables for security
-* Respect API rate limits
 
 ---
